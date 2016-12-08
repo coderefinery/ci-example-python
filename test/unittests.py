@@ -42,7 +42,7 @@ class SimpleTests(unittest.TestCase):
     def test_vec_002(self):
         vec1 = [0, 1]
         vec2 = [-1, 0]
-        self.assertListEqual(oper.matrix_sum(vec1, vec2), [0, 0])
+        self.assertListEqual(oper.matrix_sum(vec1, vec2), [-1, 1])
 
 if __name__ == '__main__':
     unittest.main()
