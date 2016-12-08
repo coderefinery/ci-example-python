@@ -31,8 +31,8 @@ class SimpleTests(unittest.TestCase):
     def test_sum_003(self):
         var1 = 5.6
         var2 = 5
-        oper.int_sum(var1, var2)
-        self.assertRaises()
+        with self.assertRaises(Exception) as _:
+            oper.int_sum(var1, var2)
 
     def test_vec_001(self):
         vec1 = [1, 2, 3, 4]

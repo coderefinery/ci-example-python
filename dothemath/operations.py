@@ -9,7 +9,7 @@ def int_sum(a, b):
     :return: sum of a and b
     """
     if not isinstance(a, int) or not isinstance(b, int):
-        raise
+        raise Exception("Expecting integers")
     return a + b
 
 
@@ -21,5 +21,5 @@ def matrix_sum(v1, v2):
     :return: vector of sums
     """
     if not all(isinstance(x, int) for x in v1) or not all(isinstance(x, int) for x in v2):
-        raise
+        raise Exception("Expecting integers")
     return [sum(x) for x in zip(v1, v2)]
