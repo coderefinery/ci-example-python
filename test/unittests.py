@@ -36,7 +36,7 @@ class SimpleTests(unittest.TestCase):
 
     def test_vec_001(self):
         vec1 = [1, 2, 3, 4]
-        vec2 = [5, 6]
+        vec2 = [5, 6, 0, 0]
         self.assertListEqual(oper.matrix_sum(vec1, vec2), [6, 8])
 
     def test_vec_002(self):
